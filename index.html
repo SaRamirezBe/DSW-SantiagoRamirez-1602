@@ -6,13 +6,87 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Fase 2</title>
   <style>
+    body {
+      background-color: whitesmoke;
+    }
+    header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #333;
+  color: #fff;
+}
+nav {
+  font-family: Arial, sans-serif;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline-block;
+}
+
+nav ul li a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: #333;
+  font-size: 16px;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+}
+
+nav ul li {
+  margin-right: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  transition: all 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #f1c40f;
+}
+
+.menu-toggle {
+  display: none;
+  color: #fff;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 768px) {
+  nav ul {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  nav ul li {
+    margin: 10px 0;
+  }
+  .menu-toggle {
+    display: block;
+  }
+  
+}
     footer {
       position: fixed;
       left: 0;
       bottom: 0;
       width: 100%;
       text-align: center;
-      background-color: #f2f2f2;
+      background-color:#333;
       padding: 20px;
   </style>
 </head>
@@ -29,12 +103,16 @@
         <li><a href="#Acerca-de">Acerca de</a></li>
       </ul>
     </nav>
+    <div class="menu-toggle">
+    <i class="fas fa-bars"></i>
+  </div>
     <section id="Inicio">
   </header>
   <h2>Inicio</h2>
   <p>Flexbox es un modelo de diseño en CSS que permite crear diseños flexibles y adaptables a diferentes tamaños de
     pantalla y dispositivos. Con Flexbox, los elementos HTML pueden ser distribuidos y alineados de manera eficiente y
     dinámica en un contenedor flexible.</p>
+    <img src="Ejemplo Flex Box.png" width="760" height="500">
   </section>
   <br><br><br>
   <section id="Flexbox">
@@ -75,21 +153,21 @@
         flex-wrap: wrap;</li>
     </ul>
   </section>
-  <br><br>
+  <br>
   <section id="Mockup">
     <h2>Mockup</h2>
    <img src="Mockup.drawio.png" alt="">
   </section>
-  <br><br><br><br><br><br>
+  <br><br>
   <section id="Acerca-de">
     <h2>Acerca de</h2>
-<p>Santiago Ramírez
-  correo:santyramber@gmail.com</p>
-    <br><br><br><br><br>
+<p>Santiago Alberto Ramírez</p>
+<p>Correo: santyramber@gmail.com</p>
+<p>Skype: live:santyramber</p>
+<br><br><br><br><br><br><br><br><br><br>
   </section>
-
   <footer>
-    <p>&copy; Flex Box. Todos los derechos reservados.</p>
+    <p>&copy; Santiago Alberto Ramírez. Todos los derechos reservados.</p>
     <p>&Uacute;ltima actualizaci&oacute;n: <time datetime="2023-03-14">14 de Marzo de 2023</time></p>
   </footer>
 </body>
