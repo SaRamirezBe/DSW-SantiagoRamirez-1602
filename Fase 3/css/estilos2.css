@@ -1,16 +1,17 @@
 .contenedor {
     display: grid;
     grid-template-areas:
-        'A A A A'
-        'B B B B'
-        'C C C C'
-        'D D D D'
-        'E E E E';
+        ' A A A A'
+        ' B B B B'
+        ' C D D D'
+        ' E E E E';
 }
 
 header {
     grid-area: A;
+    color: whitesmoke;
     background-color: #3f0071;
+    padding: 20px;
 }
 
 nav {
@@ -20,16 +21,56 @@ nav {
 
 aside {
     grid-area: C;
-    background-color: #3F0071;
+    background-color: #0002A1;
 }
 
 main {
     grid-area: D;
-    background-color: #FB2576;
+    color: whitesmoke;
+    background-color: #332FD0;
+    padding: 20px;
 }
 
 footer {
     grid-area: E;
     color: whitesmoke;
     background-color: #3F0071;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.centrado{
+    text-align: center;
+}
+
+/* Menu*/
+
+.menu-horizontal{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style: none;
+}
+.menu-horizontal a{
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    padding: 10px 40px;
+    margin: 4px;
+}
+
+.menu-aside{
+    list-style: none;
+}
+.menu-aside a{
+
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    padding: 10px 40px;
+    margin: 4px;
+    display: block;
 }
